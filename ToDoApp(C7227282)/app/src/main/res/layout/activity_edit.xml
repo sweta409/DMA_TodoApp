@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <TextView
+        android:id="@+id/title_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="HEADING"
+        android:textSize="35sp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <EditText
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:hint="Short Title..."
+        android:paddingTop="25dp"
+        android:maxLines="2"
+        android:textAlignment="textStart"
+        android:textSize="25sp"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorContent"
+        android:textColorHint="@color/colorHint"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SET DATE"
+            android:id="@+id/dateButton"
+            android:onClick="setDateDialog"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorAccent"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SET TIME"
+            android:id="@+id/timeButton"
+            android:onClick="setTimeDialog"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorAccent"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="MESSAGE"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:hint="Brief Message ( about 50 words )... "
+        android:textAlignment="textStart"
+        android:paddingTop="25dp"
+        android:textSize="17sp"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorContent"
+        android:textColorHint="@color/colorHint"/>
+
+
+
+</LinearLayout>

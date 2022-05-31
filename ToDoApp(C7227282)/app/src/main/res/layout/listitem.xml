@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="HEADING"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/heading_list"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textSize="22sp"
+        android:textColor="@color/list_heading"
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="12 / 10 / 2019"
+            android:textSize="12sp"
+            android:textColor="@color/list_date_and_time"
+            android:id="@+id/date_list"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="10 : 11 AM"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/list_date_and_time"
+            android:id="@+id/time_list"/>
+    </LinearLayout>
+
+</LinearLayout>
